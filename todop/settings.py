@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0&=p1%z3be&#bah)gt)eyc%#_)#_08w8sy=&mv*2gzq($9%i@w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'todop.wsgi.application'
 #
 import dj_database_url
 DATABASES ={
-    "default":dj_database_url.parse()
+    "default":dj_database_url.parse('postgres://manu:KRYBzMeuhiNMf9soCNtJbvvGaRq1ZvKv@dpg-cmobls6n7f5s73d450q0-a.singapore-postgres.render.com/tododb_aibg')
 }
 
 # Password validation
